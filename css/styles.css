@@ -98,7 +98,7 @@ nav {
     margin-left: 50px;
   }
 .site-nav a{
-   
+  font-size: 14px; 
 color:var(--black); 
 font-weight: 500;
 line-height: 1.14;
@@ -146,10 +146,10 @@ text-decoration: none;
 transition: var(--animation-transition);
 }
 
-.connection-email:hover .connection-icon,
-.connection-email:focus .connection-icon,
-.connection-tel:hover .connection-icon,
-.connection-tel:focus .connection-icon {
+.connection__email:hover .connection__icon,
+.connection__email:focus .connection__icon,
+.connection__tel:hover .connection__icon,
+.connection__tel:focus .connection__icon {
     fill: var(--accent-color);
     }
 .connection a:hover, 
@@ -157,7 +157,7 @@ transition: var(--animation-transition);
     color: var(--accent-color);
  }
 
-.connection-icon {
+.connection__icon {
     padding: 0;
     width: 16px;
     height: 12px;
