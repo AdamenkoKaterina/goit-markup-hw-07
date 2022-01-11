@@ -73,7 +73,6 @@ text-decoration: none;
 .main-nav {
     display: flex;
     align-items: center;
-
     }
 /* Site-nav */
 .site-nav {
@@ -163,13 +162,6 @@ transition: var(--animation-transition);
     margin-right: 10px;
     fill: var(--text-color);
 }
-/*.connection-phone {
-    width: 10px;
-    height: 16px;
-    margin-right: 10px;
-    fill: var(--text-color);
-}*/
-
 
 /* Title */
 .title {
