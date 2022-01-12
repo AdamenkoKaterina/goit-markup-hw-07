@@ -12,24 +12,26 @@
     background-color: rgba(255, 255, 255, 0.1);
     border-radius: 50%;
     transition: var(--animation-transition);
+&:hover,
+&:focus {
+     background-color: var(--accent-color);
+ }
 }
 .networks__icon {
    fill: var(--white);
    justify-content:center;
    align-items: center;
    transition: var(--animation-transition);
- }
+ 
+   .networks__link:hover &,
+   .networks__link:focus & {
+     background-color: var(--accent-color);
+     }
+    }
 .networks .networks__list+.networks__list {
     margin-left: 10px;
 }
- .networks__link:hover .networks__icon,
- .networks__link:focus .networks__icon {
-     background-color: var(--accent-color);
-     }
-  .networks__link:hover,
-  .networks__link:focus {
-     background-color: var(--accent-color);
- }
+  
 .networks-box__title {
     font-size: 14px;
     font-weight: 700;

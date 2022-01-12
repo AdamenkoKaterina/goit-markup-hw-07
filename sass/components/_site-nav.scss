@@ -20,14 +20,11 @@ line-height: 1.14;
 letter-spacing: 0.02em; 
 text-decoration: none; 
 transition: var(--animation-transition);
-}
-
-.site-nav__link:hover,
-.site-nav__link:focus {
+&:hover,
+&:focus {
    color: var(--accent-color);
 }
-
-.site-nav__link--active::after {
+&--active::after {
     content: "";
     display: block;
     position: relative;
@@ -38,7 +35,4 @@ transition: var(--animation-transition);
     background-color: var(--accent-color);
     border-radius: 4px;
 }
-
-.active-page {
-    color: var(--accent-color);
 }

@@ -36,10 +36,10 @@
    fill: var(--black);
    border: 1px solid rgba(0, 0, 0, 0.1);
    border-radius: 50%;
-}
-.modal__icon:hover {
+&:hover {
     fill: var(--accent-color);
-}
+}}
+
 .form__coment {
     resize: none;
     cursor: pointer;
@@ -82,22 +82,20 @@
     border: 1px solid rgba(33, 33, 33, 0.2);
     box-sizing: border-box;
     border-radius: 4px;
-}
-.form__input:focus {
+
+    &:focus {
     padding-left: 42px;
     border: 1px solid var(--accent-color);
     outline-color: var(--accent-color); 
-    fill: var(--accent-color);
+    fill: var(--accent-color);}
 }
+
 .form__icon {
     position: absolute;
     left: 12px;
     top: 30px;
     }
-    
-.form__coment::placeholder {
-    color: rgba(117, 117, 117, 0.5);
-}
+   
 .form__coment {
     font-size: 12px;
     line-height: 1.17;
@@ -107,13 +105,17 @@
     border: 1px solid rgba(33, 33, 33, 0.2);
     box-sizing: border-box;
     border-radius: 4px;
+
+    &::placeholder {
+    color: rgba(117, 117, 117, 0.5);}
+    &:focus {
+    outline-color: var(--accent-color); 
+    }
 }
 .coment-box {
     margin-bottom: 20px;
 }
-.form__coment:focus {
-    outline-color: var(--accent-color); 
-    }
+
 .checkbox {
     display: flex;
     margin-bottom: 30px;
@@ -151,7 +153,6 @@
 .button-modal {
     width: 200px;
     height: 50px;
-    
     background-color: var(--accent-color);
     color: var(--white);
     border-radius: 4px;

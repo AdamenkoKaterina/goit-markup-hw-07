@@ -56,17 +56,19 @@ text-align: center;
        fill: var(--text-color);
        border-radius: 50%;
        transition: var(--animation-transition);       
-    }
+    &:hover,
+    &:focus {
+    background-color: var(--accent-color);}
+    } 
+    
 .social-group__icon {
         fill: var(--social-icon);
         transition: var(--animation-transition);
-    }
-.social-group__link:hover .social-group__icon,
-.social-group__link:focus .social-group__icon{
+.social-group__link:hover &,
+.social-group__link:focus & {
     fill: var(--white);
-    background-color: var(--accent-color);
-    } 
-    .social-group__link:hover,
-    .social-group__link:focus {
-    background-color: var(--accent-color);
-    } 
+    background-color: var(--accent-color);}
+    }    
+    
+
+    
